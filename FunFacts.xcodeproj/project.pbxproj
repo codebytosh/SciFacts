@@ -12,6 +12,8 @@
 		5F869E00202E90CF0032239C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F869DFE202E90CF0032239C /* Main.storyboard */; };
 		5F869E02202E90CF0032239C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F869E01202E90CF0032239C /* Assets.xcassets */; };
 		5F869E05202E90CF0032239C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F869E03202E90CF0032239C /* LaunchScreen.storyboard */; };
+		5F869E0D2031F4AB0032239C /* FactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F869E0C2031F4AB0032239C /* FactProvider.swift */; };
+		5F869E0F20326F660032239C /* BackgroundColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F869E0E20326F660032239C /* BackgroundColorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5F869E01202E90CF0032239C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F869E04202E90CF0032239C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F869E06202E90CF0032239C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F869E0C2031F4AB0032239C /* FactProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactProvider.swift; sourceTree = "<group>"; };
+		5F869E0E20326F660032239C /* BackgroundColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				5F869E01202E90CF0032239C /* Assets.xcassets */,
 				5F869E03202E90CF0032239C /* LaunchScreen.storyboard */,
 				5F869E06202E90CF0032239C /* Info.plist */,
+				5F869E0C2031F4AB0032239C /* FactProvider.swift */,
+				5F869E0E20326F660032239C /* BackgroundColorProvider.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				5F869DFD202E90CF0032239C /* ViewController.swift in Sources */,
 				5F869DFB202E90CF0032239C /* AppDelegate.swift in Sources */,
+				5F869E0F20326F660032239C /* BackgroundColorProvider.swift in Sources */,
+				5F869E0D2031F4AB0032239C /* FactProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,12 +283,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J47CW6NJK3;
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = appsbytosh.FunFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbytosh.SciFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,12 +299,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J47CW6NJK3;
 				INFOPLIST_FILE = FunFacts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = appsbytosh.FunFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbytosh.SciFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

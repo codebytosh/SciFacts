@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    let factProvider = FactProvider()
+    let colorProvider = BackgroundColorProvider()
+    
+    @IBOutlet weak var funFactLabel: UILabel!
+    @IBOutlet weak var funFactButton: UIButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Displays first fact on the viewer
+        funFactLabel.text = factProvider.randomFact()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +28,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func showFact(_ sender: Any) {
+        print("Button Works!")
+        //Displays facts after the button is clicked
+        funFactLabel.text = factProvider.randomFact()
+        
+        //Changes background color everytime button is pressed -> RGBF Scale
+        let randomColor = colorProvider.randomColor()
+        view.backgroundColor = randomColor
+        funFactButton.tintColor = randomColor
+    }
 }
+
 
